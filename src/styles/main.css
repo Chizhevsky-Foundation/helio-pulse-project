@@ -81,3 +81,34 @@ body {
     border-top: 2px solid var(--accent-color);
     margin-top: 2rem;
 }
+
+.alert-panel {
+    grid-column: 1 / -1;
+    border-left-color: var(--warning-color);
+}
+
+.ftrt-panel {
+    grid-column: 1 / -1;
+    border-left-color: var(--accent-secondary);
+}
+
+#ftrt-prediction {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(240, 98, 146, 0.1);
+    border-radius: 5px;
+    border-left: 3px solid var(--accent-secondary);
+}
+
+#ftrt-prediction h3 {
+    margin-top: 0;
+    color: var(--text-primary);
+}
+
+.ftrt-critical {
+    color: var(--accent-secondary);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* ... (estilos posteriores) ... */
