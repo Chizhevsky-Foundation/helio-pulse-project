@@ -1,0 +1,15 @@
+[
+  { "year": 1905, "event": "Revolución Rusa de 1905", "intensity": 7, "solarCycle": 14 },
+  { "year": 1914, "event": "Inicio de la Primera Guerra Mundial", "intensity": 10, "solarCycle": 15 },
+  { "year": 1917, "event": "Revolución Rusa", "intensity": 9, "solarCycle": 15 },
+  { "year": 1936, "event": "Inicio de la Guerra Civil Española", "intensity": 8, "solarCycle": 17 },
+  { "year": 1939, "event": "Inicio de la Segunda Guerra Mundial", "intensity": 10, "solarCycle": 17 },
+  { "year": 1956, "event": "Revolución Húngara", "intensity": 8, "solarCycle": 19 },
+  { "year": 1968, "event": "Primavera de Praga", "intensity": 7, "solarCycle": 20 },
+  { "year": 1973, "event": "Guerra de Yom Kippur", "intensity": 8, "solarCycle": 20 },
+  { "year": 1989, "event": "Caída del Muro de Berlín", "intensity": 6, "solarCycle": 22 },
+  { "year": 1991, "event": "Guerra del Golfo", "intensity": 7, "solarCycle": 22 },
+  { "year": 2001, "event": "Atentados del 11-S", "intensity": 9, "solarCycle": 23 },
+  { "year": 2011, "event": "Primavera Árabe", "intensity": 8, "solarCycle": 24 },
+  { "year": 2022, "event": "Conflicto Rusia-Ucrania", "intensity": 9, "solarCycle": 25 }
+]
