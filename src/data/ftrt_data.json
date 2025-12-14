@@ -1,8 +1,0 @@
-[
-  { "date": "2003-10-28", "ftrt": 4.87, "event": "Tormentas Halloween", "level": "EXTREMO" },
-  { "date": "2024-05-10", "ftrt": 2.94, "event": "Tormenta Solar Mayo", "level": "CRITICO" },
-  { "date": "2025-10-21", "ftrt": 1.92, "event": "Evento Amazon", "level": "CRITICO" },
-  { "date": "2025-11-15", "ftrt": 1.95, "event": "Predicción Financieras", "level": "CRITICO" },
-  { "date": "2026-03-10", "ftrt": 2.34, "event": "Posible Carrington Moderado", "level": "EXTREMO" },
-  { "date": "2026-08-22", "ftrt": 1.78, "event": "Vulnerabilidad Redes 5G", "level": "ELEVADO" }
-]
