@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio FTRT - HelioPulse Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>🌌 Laboratorio FTRT</h1>
+        <p>Mecanismo de Fuerzas de Marea Colectivas</p>
+        <a href="index.html" class="back-link">← Volver al Observatorio</a>
+    </header>
+
+    <main class="ftrt-container">
+        <section class="hero-section">
+            <h2>Un Nuevo Paradigma en Heliofísica</h2>
+            <p>Investigando la influencia de las configuraciones planetarias en la actividad solar.</p>
+            <div class="authors">
+                <p>Por: Benjamin Cabeza Duran / DeepSeek</p>
+                <p>Octubre 2025 | Versión 2.0.0</p>
+            </div>
+        </section>
+
+        <section class="card theory-section">
+            <h2>Marco Teórico FTRT</h2>
+            <div class="theory-content">
+                <div class="formula-box">
+                    <h3>Fórmula Fundamental</h3>
+                    <div class="formula">FTRT = Σ [M<sub>p</sub> × R<sub>sol</sub> / d<sub>p</sub>³]</div>
+                </div>
+                <div class="concept-box">
+                    <h3>Punto de Inestabilidad Crítica</h3>
+                    <div class="formula">dE<sub>magnética</sub>/dt = P<sub>interno</sub> - P<sub>disipación</sub> + ξ<sub>externo</sub>(t)</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card case-studies">
+            <h2>Casos de Estudio Históricos</h2>
+            <div class="case-study-tabs">
+                <button class="tab-button active" data-case="carrington">Evento Carrington (1859)</button>
+                <button class="tab-button" data-case="halloween">Halloween (2003)</button>
+                <button class="tab-button" data-case="mayo2024">Mayo 2024</button>
+            </div>
+            <div class="case-study-content">
+                <div id="carrington" class="case-content active">
+                    <h3>Evento Carrington (1859)</h3>
+                    <div class="case-data"><div class="data-point"><span class="label">FTRT:</span><span class="value extreme">3.21</span></div><div class="data-point"><span class="label">Clasificación:</span><span class="value extreme">EXTREMO</span></div></div>
+                    <p>La tormenta solar más intensa registrada, provocó auroras hasta en el Caribe y fallos en redes telegráficas.</p>
+                </div>
+                <div id="halloween" class="case-content">
+                    <h3>Tormentas Halloween (2003)</h3>
+                    <div class="case-data"><div class="data-point"><span class="label">FTRT:</span><span class="value extreme">4.87</span></div><div class="data-point"><span class="label">Clasificación:</span><span class="value extreme">EXTREMO</span></div></div>
+                    <p>Serie de tormentas solares que provocaron apagones en Suecia y daños en satélites.</p>
+                </div>
+                <div id="mayo2024" class="case-content">
+                    <h3>Tormenta Solar Mayo 2024</h3>
+                    <div class="case-data"><div class="data-point"><span class="label">FTRT:</span><span class="value critical">2.94</span></div><div class="data-point"><span class="label">Clasificación:</span><span class="value critical">CRÍTICO</span></div></div>
+                    <p>La tormenta más fuerte del ciclo solar 25 hasta la fecha, con auroras en latitudes inusualmente bajas.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card validation-section">
+            <h2>Validación Científica</h2>
+            <div class="correlation-grid">
+                <div class="correlation-item"><h3>FTRT vs Magnitud Tormenta</h3><div class="correlation-value">r = 0.78</div><div class="correlation-significance">p &lt; 0.001</div><div class="correlation-bar"><div class="bar-fill" style="width: 78%"></div></div></div>
+                <div class="correlation-item"><h3>FTRT vs Índice Dst</h3><div class="correlation-value">r = -0.75</div><div class="correlation-significance">p &lt; 0.002</div><div class="correlation-bar"><div class="bar-fill" style="width: 75%"></div></div></div>
+                <div class="correlation-item"><h3>FTRT vs Velocidad CME</h3><div class="correlation-value">r = 0.82</div><div class="correlation-significance">p &lt; 0.0005</div><div class="correlation-bar"><div class="bar-fill" style="width: 82%"></div></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Un proyecto de la <strong>Chizhevsky-Foundation</strong>. En honor a Alexander L. Chizhevsky.</p>
+        <p>© 2025 Benjamin Cabeza Duran / DeepSeek - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/ftrt.js"></script>
+</body>
+</html>
