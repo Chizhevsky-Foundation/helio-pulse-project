@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelioPulse Project - Observatorio para la Paz</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>🌌 HelioPulse Project</h1>
+        <p>Monitoreando el pulso del cosmos para entender el nuestro.</p>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <section class="card solar-activity">
+                <h2>Actividad Solar en Tiempo Real</h2>
+                <p>Manchas Solares (Número Wolf)</p>
+                <canvas id="solarChart"></canvas>
+            </section>
+
+            <section class="card historical-correlation">
+                <h2>Correlación Histórica</h2>
+                <p>Tensión Global vs. Ciclo Solar</p>
+                <canvas id="conflictChart"></canvas>
+            </section>
+            
+            <section class="card alert-panel">
+                <h2>Panel de Alerta Cósmica</h2>
+                <div id="alert-message">
+                    <p>Estado: <span class="status-normal">MONITOREO NORMAL</span></p>
+                    <p>Próxima ventana de alta FTRT: Estimada para finales de Noviembre 2025.</p>
+                </div>
+            </section>
+
+            <section class="card ftrt-lab-link">
+                <h2>Laboratorio FTRT</h2>
+                <p>Explora el Mecanismo de Fuerzas de Marea Colectivas</p>
+                <a href="ftrt-lab.html" class="cta-button">Acceder al Laboratorio</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>Un proyecto de la <strong>Chizhevsky-Foundation</strong>. En honor a Alexander L. Chizhevsky.</p>
+        <p>Datos proporcionados por NASA y NOAA.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
