@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio Vivo: Análisis del Conflicto Israel-Gaza - HelioPulse Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>🕊️ Laboratorio Vivo: Análisis del Conflicto Israel-Gaza</h1>
+        <p>Buscando patrones en la historia y el cosmos.</p>
+        <a href="index.html" class="back-link">← Volver al Observatorio</a>
+    </header>
+
+    <main class="ftrt-container">
+        <section class="card methodology">
+            <h2>Metodología y Objetivo</h2>
+            <p>Este laboratorio aplica la teoría de las Fuerzas de Marea Relativas Totales (FTRT) y la Heliobiología de Chizhevsky a un conflicto específico y en curso. Nuestro objetivo no es tomar partido, sino buscar correlaciones objetivas entre la actividad solar y los picos de intensidad del conflicto. Analizamos cada evento clave desde 1948, cruzándolo con el número de manchas solares y el valor FTRT calculado para esa fecha.</p>
+            <p><strong>Advertencia:</strong> Este es un análisis científico y estadístico. La complejidad humana y política no puede reducirse únicamente a un factor. Buscamos una pieza más del rompecabezas, no la explicación total.</p>
+        </section>
+
+        <section class="card correlation-chart">
+            <h2>Correlación: Intensidad vs. Actividad Solar</h2>
+            <p>Gráfico de dispersión mostrando la relación entre la intensidad de los eventos y el número de manchas solares.</p>
+            <canvas id="correlationScatter"></canvas>
+        </section>
+
+        <section class="card timeline-section">
+            <h2>Línea de Tiempo Interactiva</h2>
+            <div class="controls">
+                <label for="typeFilter">Filtrar por tipo de evento:</label>
+                <select id="typeFilter">
+                    <option value="all">Todos los Eventos</option>
+                    <option value="Guerra">Guerra</option>
+                    <option value="Operación Militar">Operación Militar</option>
+                    <option value="Intifada">Intifada</option>
+                    <option value="Ataque Significativo">Ataque Significativo</option>
+                    <option value="Acuerdo de Paz">Acuerdo de Paz</option>
+                    <option value="Escalada Diplomática">Escalada Diplomática</option>
+                </select>
+            </div>
+            <div id="timeline-container" class="timeline-container">
+                <!-- Los eventos se insertarán aquí con JavaScript -->
+            </div>
+        </section>
+
+        <section class="card preliminary-conclusions">
+            <h2>Conclusiones Preliminares</h2>
+            <ul>
+                <li><strong>Tendencia al Clúster:</strong> Los eventos de alta intensidad (8+) parecen agruparse en períodos de alta actividad solar (máximos solares), como en 1956, 1967, 1973, 2002 y 2023.</li>
+                <li><strong>Conflictos en Mínimos:</strong> Algunos conflictos importantes (ej. 1973, 2008-2009) ocurren en mínimos solares, lo que sugiere que la FTRT no es el único factor, sino un <em>modulador de umbral</em> que aumenta la probabilidad de que una tensión existente estalle.</li>
+                <li><strong>Acuerdos de Paz:</strong> Los acuerdos de paz tienden a ocurrir en períodos de menor intensidad solar (mínimos o fases descendentes), lo que podría apoyar la tesis de Chizhevsky sobre la "excitabilidad de las masas". Una menor excitabilidad podría favorecer el diálogo.</li>
+            </ul>
+            <p><strong>Nota:</strong> Estas son observaciones iniciales. Se requiere un análisis estadístico más profundo para establecer causalidad.</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Un proyecto de la <strong>Chizhevsky-Foundation</strong>.</p>
+        <p>Construido con rigor y objetividad para la paz.</p>
+    </footer>
+
+    <script src="js/israel-gaza.js"></script>
+</body>
+</html>
