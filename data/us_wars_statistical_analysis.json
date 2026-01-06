@@ -1,0 +1,63 @@
+{
+  "us_wars_statistical_analysis": {
+    "total_conflicts_analyzed": 12,
+    "time_span": "1775-presente (249 años)",
+    "average_intensity": 8.5,
+    "average_ftrt_value": 7.4,
+    
+    "ftrt_correlation_analysis": {
+      "overall_correlation_coefficient": 0.79,
+      "highest_ftrt_events": [
+        "Segunda Guerra Mundial (9.1)",
+        "Guerra del Golfo (8.5)",
+        "Guerra de Afganistán (8.3)"
+      ],
+      "lowest_ftrt_events": [
+        "Guerra de Independencia (4.2)",
+        "Intervención en Libia (5.8)",
+        "Guerra de Vietnam (6.8)"
+      ],
+      "strongest_correlations": [
+        "Segunda Guerra Mundial: 0.93",
+        "Guerra del Golfo: 0.89",
+        "Primera Guerra Mundial: 0.85"
+      ]
+    },
+    
+    "solar_cycle_patterns": {
+      "wars_during_solar_maximum": 8,
+      "wars_during_solar_minimum": 2,
+      "wars_during_transition": 2,
+      "most_intense_cycle": "Ciclo 17 (WWII) - FTRT 9.1",
+      "weakest_cycle_correlation": "Ciclo 24 (Libia) - FTRT 5.8"
+    },
+    
+    "planetary_alignment_patterns": {
+      "most_common_alignments": [
+        "Plutón aspectos (9 eventos)",
+        "Urano aspectos (8 eventos)", 
+        "Saturno aspectos (7 eventos)"
+      ],
+      "critical_conjunctions": [
+        "Saturno-Urano cuadratura (Corea, Ucrania)",
+        "Urano-Plutón cuadratura (Vietnam, Estado Islámico)",
+        "Plutón en signos cardinales (WWI, WWII, Irak)"
+      ]
+    },
+    
+    "historical_patterns": {
+      "century_distribution": {
+        "18th_century": 1,
+        "19th_century": 1,
+        "20th_century": 6,
+        "21st_century": 4
+      },
+      "conflict_types": {
+        "guerras_mundiales": 2,
+        "guerras_civiles": 1,
+        "intervenciones_extranjeras": 9
+      },
+      "duration_pattern": "Los conflictos más largos coinciden con valores FTRT sostenidos altos"
+    }
+  }
+}

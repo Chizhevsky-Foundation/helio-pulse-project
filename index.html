@@ -3,52 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HelioPulse Project - Observatorio para la Paz</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap">
+    <title>HelioPulse Project - Centro de Predicción Global</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 </head>
 <body>
     <header class="main-header">
-        <h1>🌌 HelioPulse Project</h1>
-        <p>Monitoreando el pulso del cosmos para entender el nuestro.</p>
+        <div class="header-content">
+            <h1>🌌 HelioPulse Project</h1>
+            <p class="tagline">Centro de Predicción Global</p>
+            <nav class="main-nav">
+                <a href="#prediction-engine" class="nav-link active">Motor FTRT</a>
+                <a href="#conflict-labs" class="nav-link">Laboratorios</a>
+                <a href="#cosmic-monitor" class="nav-link">Monitor Cósmico</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="dashboard-container">
-            <section class="card solar-activity">
-                <h2>Actividad Solar en Tiempo Real</h2>
-                <p>Manchas Solares (Número Wolf)</p>
-                <canvas id="solarChart"></canvas>
-            </section>
-
-            <section class="card historical-correlation">
-                <h2>Correlación Histórica</h2>
-                <p>Tensión Global vs. Ciclo Solar</p>
-                <canvas id="conflictChart"></canvas>
-            </section>
-            
-            <section class="card alert-panel">
-                <h2>Panel de Alerta Cósmica</h2>
-                <div id="alert-message">
-                    <p>Estado: <span class="status-normal">MONITOREO NORMAL</span></p>
-                    <p>Próxima ventana de alta FTRT: Estimada para finales de Noviembre 2025.</p>
+        <section id="prediction-engine" class="dashboard-section active">
+            <div class="section-header">
+                <h2>🔮 Motor de Predicciones FTRT</h2>
+                <p>Análisis de la influencia de las fuerzas de marea planetarias en la estabilidad solar y terrestre.</p>
+            </div>
+            <div class="prediction-grid">
+                <div class="card">
+                    <h3>Próximo Pico FTRT</h3>
+                    <div class="big-stat" id="next-ftrt-peak">Calculando...</div>
+                    <p class="stat-subtitle">Fecha Estimada</p>
                 </div>
-            </section>
+                <div class="card">
+                    <h3>Nivel de Alerta Global</h3>
+                    <div class="alert-level" id="global-alert-level">--</div>
+                    <div class="alert-bar" id="global-alert-bar"></div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="ftrtPredictionChart"></canvas>
+            </div>
+        </section>
 
-            <section class="card ftrt-lab-link">
-                <h2>Laboratorio FTRT</h2>
-                <p>Explora el Mecanismo de Fuerzas de Marea Colectivas</p>
-                <a href="ftrt-lab.html" class="cta-button">Acceder al Laboratorio</a>
-            </section>
-        </div>
+        <section id="conflict-labs" class="dashboard-section">
+            <div class="section-header">
+                <h2>🕊️ Laboratorios de Conflicto</h2>
+                <p>Análisis detallado de correlaciones entre actividad solar y eventos históricos y actuales.</p>
+            </div>
+            <div class="labs-grid">
+                <a href="pages/israel-gaza-analysis.html" class="lab-card">
+                    <h3>Israel-Gaza</h3>
+                    <p>Análisis del conflicto en curso.</p>
+                </a>
+                <a href="pages/ukraine-war-analysis.html" class="lab-card">
+                    <h3>Guerra de Ucrania</h3>
+                    <p>Análisis de la invasión rusa.</p>
+                </a>
+                <a href="pages/us-wars-analysis.html" class="lab-card">
+                    <h3>Guerras de EE.UU.</h3>
+                    <p>Análisis de intervenciones americanas.</p>
+                </a>
+                <a href="pages/global-conflicts-map.html" class="lab-card">
+                    <h3>Mapa de Conflictos</h3>
+                    <p>Visualización global de conflictos pasados.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="cosmic-monitor" class="dashboard-section">
+            <div class="section-header">
+                <h2>🛰️ Monitor Cósmico en Tiempo Real</h2>
+                <p>Estado actual de la actividad solar y geomagnética.</p>
+            </div>
+            <div class="monitor-grid">
+                <div class="card">
+                    <h4>Manchas Solares (Número Wolf)</h4>
+                    <div class="stat" id="realtime-sunspots">--</div>
+                </div>
+                <div class="card">
+                    <h4>Índice Kp (Tormenta Geomagnética)</h4>
+                    <div class="stat" id="realtime-kp-index">--</div>
+                </div>
+                <div class="card">
+                    <h4>Flujo de Radiación Solar</h4>
+                    <div class="stat" id="realtime-solar-flux">--</div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="main-footer">
-        <p>Un proyecto de la <strong>Chizhevsky-Foundation</strong>. En honor a Alexander L. Chizhevsky.</p>
-        <p>Datos proporcionados por NASA y NOAA.</p>
+        <p>Un proyecto de la <strong>Chizhevsky-Foundation</strong>.</p>
+        <p>En honor a Alexander L. Chizhevsky y Benjamin Cabeza Duran.</p>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
