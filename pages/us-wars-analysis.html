@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio de Análisis: Guerras de EE.UU. - HelioPulse Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>🇺🇸 Laboratorio de Análisis: Guerras de EE.UU.</h1>
+        <p>Explorando las correlaciones cósmicas en la historia militar estadounidense.</p>
+        <a href="../index.html" class="back-link">← Volver al Observatorio</a>
+    </header>
+
+    <main class="ftrt-container">
+        <section class="card methodology">
+            <h2>Metodología y Objetivo</h2>
+            <p>Este laboratorio analiza las principales intervenciones militares de Estados Unidos, desde la Guerra de Independencia hasta el presente, buscando correlaciones con la actividad solar y los valores FTRT. Nuestro objetivo es entender si los patrones cósmicos han influido en las decisiones de entrar en conflicto.</p>
+        </section>
+
+        <section class="card correlation-chart">
+            <h2>Correlación: Intensidad vs. Actividad Solar</h2>
+            <p>Gráfico de dispersión mostrando la relación entre la intensidad de las intervenciones y el número de manchas solares.</p>
+            <canvas id="correlationScatter"></canvas>
+        </section>
+
+        <section class="card timeline-section">
+            <h2>Línea de Tiempo de Intervenciones</h2>
+            <div class="controls">
+                <label for="conflictTypeFilter">Filtrar por tipo de conflicto:</label>
+                <select id="conflictTypeFilter">
+                    <option value="all">Todas las Intervenciones</option>
+                    <option value="Guerra Mundial">Guerra Mundial</option>
+                    <option value="Guerra Civil">Guerra Civil</option>
+                    <option value="Guerra Proxy">Guerra Proxy</option>
+                    <option value="Intervención Militar">Intervención Militar</option>
+                </select>
+            </div>
+            <div id="timeline-container" class="timeline-container">
+                <!-- Los eventos se insertarán aquí con JavaScript -->
+            </div>
+        </section>
+
+        <section class="card statistical-summary">
+            <h2>Resumen Estadístico</h2>
+            <div id="stats-container">
+                <div class="stat-item">
+                    <h4>Conflicto de Mayor Intensidad</h4>
+                    <p id="highest-intensity-conflict">--</p>
+                </div>
+                <div class="stat-item">
+                    <h4>FTRT Promedio en Guerras Mundiales</h4>
+                    <p id="avg-ftrt-world-wars">--</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Correlación Promedio (r)</h4>
+                    <p id="avg-correlation">--</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Un proyecto de la <strong>Chizhevsky-Foundation</strong>.</p>
+        <p>Construido con rigor y objetividad para la paz.</p>
+    </footer>
+
+    <script src="../js/us-wars.js"></script>
+</body>
+</html>

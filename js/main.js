@@ -134,6 +134,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ... al final del archivo main.js
+
+// --- Función para mostrar un resumen global de conflictos ---
+async function showGlobalConflictSummary() {
+    try {
+        const response = await fetch('data/global-conflicts.json');
+        const conflicts = await response.json();
+        
+        const totalConflicts = conflicts.length;
+        const avgIntensity = (conflicts.reduce((sum, c) => sum + c.intensity, 0) / totalConflicts).toFixed(1);
+        
+        // Podrías actualizar un elemento en el HTML para mostrar esto
+        console.log(`Resumen Global: ${totalConflicts} conflictos, con intensidad promedio de ${avgIntensity}`);
+        
+        // Opcional: Mostrar una notificación en el panel de alerta
+        const alertMessage = document.getElementById('alert-message');
+        if (alertMessage) {
+            alertMessage.innerHTML = `
+                <p>Estado: <span class="status-normal">MONITOREO GLOBAL</span></p>
+                <p>Actualmente analizando ${totalConflicts} conflictos históricos y en curso.</p>
+                <p>Intensidad promedio global: ${avgIntensity}/10</p>
+            `;
+        }
+    } catch (error) {
+        console.error("Error al cargar el resumen global:", error);
+    }
+}
+
+    // Llamar a la nueva función al final de initDashboard()
+    // ... dentro de la función initDashboard() al final
+    showGlobalConflictSummary();
+
     // --- Inicialización ---
     updateFTRTEngine();
     updateCosmicMonitor();
