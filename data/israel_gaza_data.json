@@ -1,8 +1,0 @@
-{
-  "date": "YYYY-MM-DD",
-  "event": "Nombre descriptivo del evento",
-  "type": "Guerra | Operación Militar | Intifada | Acuerdo de Paz | Ataque Significativo | Escalada Diplomática",
-  "intensity": 7.5,
-  "description": "Breve párrafo objetivo describiendo el evento y su contexto.",
-  "sources": ["URL a fuente fiable 1", "URL a fuente fiable 2"]
-}
